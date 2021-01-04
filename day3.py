@@ -51,27 +51,66 @@
 #     print("Not leap Year")
 
 
-print("Welcome to the rollercoaster!")
-height = int(input("What is your height in cm? "))
+# print("Welcome to the rollercoaster!")
+# height = int(input("What is your height in cm? "))
+# bill = 0
+
+# if height >=120:
+#   print("You can ride the rollercoaster")
+#   age = int(input("What is your age? "))
+#   if age < 12:
+#       bill = 5
+#       print(f"Kids tickets are ${bill}")
+#   elif age <=18:
+#       bill = 7
+#       print(f"Youth tickets are ${bill}")
+#   else:
+#      bill = 12
+#      print(f"Adult tickets are ${bill}")
+#     # Additional conditions
+#   wants_photo = input('Do you want your photo taken? Y or N> ')
+#   if wants_photo[0] == 'Y':
+#       print(f"You bill is {bill+3}")
+
+#   print(f"You bill is {bill}")
+# else:
+#   print("You cannot ride, too short")
+
+# PIZZA
+
+# Small Pizza: $15
+# Medium Pizza: $20
+# Large Pizza: $25
+# Pepperoni for Small Pizza: +$2
+# Pepperoni for Medium or Large Pizza: +$3
+# Extra cheese for any size pizza: + $1
+
+# 🚨 Don't change the code below 👇
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L ")
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
+# 🚨 Don't change the code above 👆
+
+#First *fork* your copy. Then copy-paste your code below this line 👇
+#Finally click "Run" to execute the tests
 bill = 0
+if size[0] == 'S':
+    bill += 15
+elif size[0] == 'M':
+    bill += 20
+elif size[0] == 'L':
+    bill += 25
 
-if height >=120:
-  print("You can ride the rollercoaster")
-  age = int(input("What is your age? "))
-  if age < 12:
-      bill = 5
-      print(f"Kids tickets are ${bill}")
-  elif age <=18:
-      bill = 7
-      print(f"Youth tickets are ${bill}")
-  else:
-     bill = 12
-     print(f"Adult tickets are ${bill}")
-    # Additional conditions
-  wants_photo = input('Do you want your photo taken? Y or N> ')
-  if wants_photo[0] == 'Y':
-      print(f"You bill is {bill+3}")
+if add_pepperoni[0] =='Y':
+    if size == 'S':
+        bill +=2
+    else:
+        bill+=3
 
-  print(f"You bill is {bill}")
+if extra_cheese[0] =='Y':
+    bill+=1
 else:
-  print("You cannot ride, too short")
+    bill
+
+print(f"Your final bill is: ${bill}.")
