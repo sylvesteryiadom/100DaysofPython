@@ -86,31 +86,56 @@
 # Extra cheese for any size pizza: + $1
 
 # 🚨 Don't change the code below 👇
-print("Welcome to Python Pizza Deliveries!")
-size = input("What size pizza do you want? S, M, or L ")
-add_pepperoni = input("Do you want pepperoni? Y or N ")
-extra_cheese = input("Do you want extra cheese? Y or N ")
+# print("Welcome to Python Pizza Deliveries!")
+# size = input("What size pizza do you want? S, M, or L ")
+# add_pepperoni = input("Do you want pepperoni? Y or N ")
+# extra_cheese = input("Do you want extra cheese? Y or N ")
 # 🚨 Don't change the code above 👆
 
 #First *fork* your copy. Then copy-paste your code below this line 👇
 #Finally click "Run" to execute the tests
-bill = 0
-if size[0] == 'S':
-    bill += 15
-elif size[0] == 'M':
-    bill += 20
-elif size[0] == 'L':
-    bill += 25
+# bill = 0
+# if size[0] == 'S':
+#     bill += 15
+# elif size[0] == 'M':
+#     bill += 20
+# elif size[0] == 'L':
+#     bill += 25
 
-if add_pepperoni[0] =='Y':
-    if size == 'S':
-        bill +=2
-    else:
-        bill+=3
+# if add_pepperoni[0] =='Y':
+#     if size == 'S':
+#         bill +=2
+#     else:
+#         bill+=3
 
-if extra_cheese[0] =='Y':
-    bill+=1
-else:
-    bill
+# if extra_cheese[0] =='Y':
+#     bill+=1
+# else:
+#     bill
 
-print(f"Your final bill is: ${bill}.")
+# print(f"Your final bill is: ${bill}.")
+
+# print("Welcome to the Love Calculator!")
+# name1 = input("What is your name? \n").lower()
+
+# name2 = input("What is their name? \n").lower()
+# both_names = name1+name2
+# #TRUELOVE count
+# love = 0
+# true = 0
+# true+=both_names.count('t')
+# true+=both_names.count('r')
+# true+=both_names.count('u')
+# true+=both_names.count('e')
+# love+=both_names.count('l')
+# love+=both_names.count('o')
+# love+=both_names.count('v')
+# love+=both_names.count('e')
+# loveScore = int(str(true) + str(love))
+# print(loveScore)
+# if loveScore < 10 or loveScore > 90:
+#     print(f"Your score is {loveScore}, you go together like coke and mentos.")
+# elif loveScore >=40 and loveScore<=50:
+#     print(f"Your score is {loveScore}, you are alright together.")
+# else:
+#     print(f"Your score is {loveScore}")
