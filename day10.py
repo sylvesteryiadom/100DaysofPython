@@ -1,4 +1,5 @@
 # functions with Outputs
+import art
 
 def format_name(fname, lname):
     """ Takes two names and capitalizes the first letter of both names"""
@@ -38,6 +39,7 @@ print(new_name)
 # CALCULATOR
 # Add
 
+print(art.calculator)
 def add(n1, n2):
     return n1 + n2
 
@@ -64,7 +66,7 @@ operations = {
 }
 
 def calculator():
-    num1 = int(input("What's your first number?: "))
+    num1 = float(input("What's your first number?: "))
     symbols = ""
     for sym in operations:
         symbols+= sym +' '
@@ -72,7 +74,7 @@ def calculator():
     should_continue = True # flag
     while should_continue:
         op_sym = input("Pick an operation: ")
-        num2 = int(input("What's the next number?: "))
+        num2 = float(input("What's the next number?: "))
         calculation = operations[op_sym]
         answer = calculation(num1,num2)
         
