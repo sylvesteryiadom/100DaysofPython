@@ -76,7 +76,6 @@ def compare(user_score, comp_score):
     else:
         return f"Opponent wins with a score of {comp_score}"
     
-
 #Hint 5: Deal the user and computer 2 cards each using deal_card() and append().
 user_cards = []
 computer_cards = []
@@ -113,9 +112,10 @@ while not isGameOver:
 while comp_score != 0 and comp_score < 17:
     computer_cards.append(deal_card())
     comp_score = calculate_score(computer_cards)
-    
 
-
+print(f"Your final hand is: {user_cards} and a score of: {user_score}")
+print(f"Computer card: {computer_cards} and a score of: {comp_score}")
+print(compare(user_score,comp_score))
 
 #Hint 14: Ask the user if they want to restart the game. If they answer yes, clear the console and start a new game of blackjack and show the logo from art.py.
 
