@@ -122,11 +122,14 @@ def initGame():
     print(f"Computer card: {computer_cards} and a score of: {comp_score}")
     print(compare(user_score,comp_score))
 
+
 initGame() 
+
 #Hint 14: Ask the user if they want to restart the game. If they answer yes, clear the console and start a new game of blackjack and show the logo from art.py.
 user_reponse = input("Would you like to play again? Type 'yes' to start over, 'no' to quit the game: ")
 if user_reponse == 'yes':
     initGame()
 else:
     exit
+
 
